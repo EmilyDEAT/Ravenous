@@ -1,0 +1,16 @@
+.businessList-container {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: auto;
+  grid-gap: 8%;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 735px) {
+  .businessList-container {
+    grid-template-columns: 300px;
+    grid-gap: 4%;
+  }
+}
+
