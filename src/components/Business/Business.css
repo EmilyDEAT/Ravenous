@@ -1,0 +1,31 @@
+.business {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  line-height: 0.2;
+  font-size: 16px;
+}
+
+img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover
+}
+
+.business-title {
+  font-weight: 600;
+
+}
+
+.business-description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.business-category, .business-rating{
+  color: #CCA353;
+  font-weight: 600;
+}
+
+.business-category {
+  text-transform: uppercase;
+}
