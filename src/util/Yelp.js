@@ -1,4 +1,4 @@
-const apiKey = process.env.REACT_APP_YOUR_API_KEY_NAME;
+const apiKey = process.env.REACT_APP_YELP_API_KEY;
 
 const Yelp = {
   search(term, location, sortBy) {
@@ -12,9 +12,9 @@ const Yelp = {
     ).then(response => {
       return response.json()
     })
-    .then((jsonResponse) => {
+    .then(jsonResponse => {
       if (jsonResponse.businesses) {
-        return jsonResponse.businesses.map((business) => ({
+        return jsonResponse.businesses.map(business => ({
           id: business.id,
           imageSrc: business.image_url,
           name: business.name,
@@ -27,7 +27,7 @@ const Yelp = {
           reviewCount: business.review_count,
         }));
       }
-    });
+    })
   },
 };
 

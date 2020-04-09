@@ -1,9 +1,7 @@
 import React from "react";
 import "./Business.css";
 
-const Business = ({
-business
-}) => (
+const Business = ({ business }) => (
   <div className="business">
     <div className="business-container-img">
       <img src={business.imageSrc} alt={business.name} />
