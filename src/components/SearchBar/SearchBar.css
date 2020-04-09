@@ -32,9 +32,9 @@
   padding: 0 4em 0.5em 4em;
 }
 
-.SearchBar-sortOptions li:active{
-  color: #cca353;
-  border-bottom: #cca353 solid 1px;
+.SearchBar-sortOptions li.active{
+  color: #f0c36c;
+  border-bottom: #f0c36c solid 1px;
 
 }
 
