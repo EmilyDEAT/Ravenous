@@ -1,34 +1,24 @@
 import React from "react";
 import "./Business.css";
 
-const Business = ({
-  imageSrc,
-  name,
-  address,
-  city,
-  state,
-  zipCode,
-  category,
-  rating,
-  reviewCount
-}) => (
+const Business = ({ business }) => (
   <div className="business">
     <div className="business-container-img">
-      <img src={imageSrc} alt={name} />
+      <img src={business.imageSrc} alt={business.name} />
     </div>
-    <h2 className="business-title">{name}</h2>
+    <h2 className="business-title">{business.name}</h2>
     <div className="business-description">
       <div className="business-address">
-        <p>{address}</p>
-        <p>{city}</p>
+        <p>{business.address}</p>
+        <p>{business.city}</p>
         <p>
-          {state} {zipCode}
+          {business.state} {business.zipCode}
         </p>
       </div>
       <div className="business-info">
-        <p className="business-category">{category}</p>
-        <p className="business-rating">{rating} stars</p>
-        <p className="business-review">{reviewCount} reviews</p>
+        <p className="business-category">{business.category}</p>
+        <p className="business-rating">{business.rating} stars</p>
+        <p className="business-review">{business.reviewCount} reviews</p>
       </div>
     </div>
   </div>
